@@ -1,0 +1,17 @@
+{
+  "name": "mario-kart-threejs",
+  "version": "1.0.0",
+  "description": "A simple Mario Kart style game using Three.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.159.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+} 
