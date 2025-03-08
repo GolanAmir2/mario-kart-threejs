@@ -1,15 +1,22 @@
 # Mario Kart Three.js
 
-A simple Mario Kart style racing game built with Three.js that runs in the browser.
+A Mario Kart style racing game built with Three.js that runs in the browser.
+
+## Play Online
+
+You can play the game online at: [https://YOUR_USERNAME.github.io/mario-kart-threejs/](https://YOUR_USERNAME.github.io/mario-kart-threejs/)
+
+(Replace YOUR_USERNAME with your GitHub username after deployment)
 
 ## Features
 
 - 3D racing game with simple graphics
-- Offline single-player mode
-- Kart physics with acceleration, steering, and drifting
-- Track with lap counting and timing
-- Simple collision detection
-- Keyboard controls
+- Offline single-player mode with AI opponents
+- Complex track with different turns and challenges
+- Powerups (speed boost, shield)
+- Jumps and obstacles
+- Collision detection
+- Lap counting and timing
 
 ## Controls
 
@@ -18,8 +25,19 @@ A simple Mario Kart style racing game built with Three.js that runs in the brows
 - **A / Left Arrow**: Turn Left
 - **D / Right Arrow**: Turn Right
 - **Space**: Drift
+- **Shift**: Jump
+- **E**: Use Powerup
 
-## Getting Started
+## Game Elements
+
+- **Red Kart**: Player
+- **Green/Blue/Yellow Karts**: AI opponents
+- **Red Boxes**: Speed boost powerups
+- **Blue Boxes**: Shield powerups
+- **Yellow Ramps**: Jumps
+- **Trees/Barriers**: Obstacles (avoid collision)
+
+## Getting Started Locally
 
 ### Prerequisites
 
@@ -30,7 +48,7 @@ A simple Mario Kart style racing game built with Three.js that runs in the brows
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/mario-kart-threejs.git
+git clone https://github.com/YOUR_USERNAME/mario-kart-threejs.git
 cd mario-kart-threejs
 ```
 
@@ -46,16 +64,6 @@ npm start
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-## Project Structure
-
-- `index.html`: Main HTML file
-- `src/main.js`: Main game logic and initialization
-- `src/utils/`: Utility modules
-  - `trackBuilder.js`: Creates the race track
-  - `kartBuilder.js`: Creates the kart
-  - `controls.js`: Handles user input
-  - `physics.js`: Handles game physics
-
 ## Building for Production
 
 To build the project for production:
@@ -66,14 +74,21 @@ npm run build
 
 The built files will be in the `dist` directory.
 
-## Future Improvements
+## Deployment
 
-- Add multiple tracks
-- Add multiple kart options
-- Add power-ups and items
-- Add AI opponents
-- Add sound effects and music
-- Add mobile controls
+The game is deployed using GitHub Pages from the `gh-pages` branch. To deploy updates:
+
+1. Make your changes
+2. Run the deployment script:
+```
+./deploy.sh
+```
+3. Commit and push the changes:
+```
+git add .
+git commit -m "Update game"
+git push origin gh-pages
+```
 
 ## License
 
